@@ -1,4 +1,4 @@
-var sql = require( "seriate" );  
+var sql = require( ["seriate"] );  
 var schema = require( "./schema" );
 var myApp = angular.module('myApp', [])
 
