@@ -1,0 +1,9 @@
+SELECT    COLUMN_NAME AS name  
+        , DATA_TYPE AS dataType
+        , IS_NULLABLE AS isNullable
+        , CHARACTER_MAXIMUM_LENGTH AS maxLength
+        , NUMERIC_PRECISION AS numPrecision
+        , NUMERIC_PRECISION_RADIX AS numRadix
+FROM     INFORMATION_SCHEMA.COLUMNS  
+WHERE    TABLE_NAME = @tableName  
+ORDER BY ORDINAL_POSITION 
